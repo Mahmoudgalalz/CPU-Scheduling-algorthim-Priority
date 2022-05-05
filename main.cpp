@@ -8,6 +8,7 @@ using namespace std;
 struct Process{
 
     int id,bt,pr,wt;
+    int ar;
 
 };
 
@@ -15,7 +16,6 @@ bool comp (Process a, Process b)
 {
     return a.pr < b.pr;
 }
-
 
 void getWaitingTime ( struct Process arr[], int sz ) // to calculate waiting time to each process
 {
@@ -31,29 +31,22 @@ void getWaitingTime ( struct Process arr[], int sz ) // to calculate waiting tim
 
 
 }
-/*
-2 1 1
-5 2 5
-1 3 10
-3 4 2
-4 5 1 */
+
 
 void input(Process arr[], int num){
 
-
-   // arr = new Process [num];
-    cout<<"Processes\t Burst time \t Priority\n";
+    cout<<"Processes\t Burst time \t Priority \t Arrival time\n";
     for (int i = 0; i < num; ++i) {
         cout<<"P"<<i+1;
         arr[i].id=i+1;
-        cin>>arr[i].bt>>arr[i].pr;
+        cin>>arr[i].bt>>arr[i].pr>>arr[i].ar;
 
     }
     cout<<"----------------------------------------------------------------------\n";
 }
 
 
-void output (struct Process arr[], int sz )
+void output (Process arr[], int sz )
 {
    for (int i=0 ; i<80 ; ++i) cout << "*";
    cout << endl << "\a";
@@ -70,23 +63,39 @@ for (int i=0 ; i<80 ; ++i) cout << "*";
 
 }
 
-
+void gantChart(Process arr[],int size){
+    cout<<"\t\t\t GantChart\n";
+    for(int i=0;i<size;i++){
+        cout<<setw(arr[i].bt)<<"P"<<arr[i].id<<"\t";
+    }
+    cout<<endl<<"0";
+    int total=0;
+    for (int i = 0; i < size; ++i) {
+        total+=arr[i].bt;
+        cout<<setfill('#')<<setw(arr[i].bt*2)<<total;
+    }
+}
+void AverageTime(Process arr[],int size){
+    int sum=0;
+    for (int i = 0; i < size; ++i) {
+        sum+=arr[i].wt;
+    }
+    cout<<"\n Average Waiting Time "<<sum<<"/"<<size<<"= "<<(float)sum/size<<endl;
+}
 int main()
 {
-        int nums;
+    int nums;
     cout<<"Enter number of Processes: ";
     cin>>nums;
-
-    Process arr[5];
+    Process arr[nums];
 
        input(arr , nums);
-        sort (arr, arr+nums, comp );
-    // priority(arr,nums);
-     cout << "fff";
-     getWaitingTime(arr, nums);
-     output(arr, nums);
+       sort (arr, arr+nums, comp );
+       getWaitingTime(arr, nums);
+       output(arr, nums);
+       gantChart(arr,nums);
+       AverageTime(arr,nums);
 
-
-return 0;
+        return 0;
 }
 
