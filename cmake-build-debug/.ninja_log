@@ -1,22 +1,6 @@
 # ninja log v5
-0	21	1651783119515897082	build.ninja	a4decd24705a942c
-0	2124	1651783121643911112	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-2125	2271	1651783121787912062	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1607	1651783357301686204	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1607	1668	1651783357365686738	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1646	1651783562091498451	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1646	1722	1651783562167499159	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1630	1651784476208968986	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1630	1696	1651784476276969731	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1675	1651784562025910978	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1675	1733	1651784562085911639	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1658	1651784617038517007	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1658	1735	1651784617114517845	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1674	1651786131448700713	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1674	1741	1651786131516701510	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1764	1651788496044513704	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1764	1843	1651788496124514637	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1712	1651788549401136602	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
-1712	1778	1651788549465137348	Scheduling_Algorithm	3b66251d5c1fedd0
-1	1691	1651788569189367569	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
+0	21	1651868160730301959	build.ninja	a4decd24705a942c
 1691	1755	1651788569253368316	Scheduling_Algorithm	3b66251d5c1fedd0
+1	1691	1651788569189367569	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
+2	2090	1651868452192634233	CMakeFiles/Scheduling_Algorithm.dir/main.cpp.o	71294ac34d801c0b
+2090	2270	1651868452372635672	Scheduling_Algorithm	3b66251d5c1fedd0

@@ -72,7 +72,7 @@ void gantChart(Process arr[],int size){
     int total=0;
     for (int i = 0; i < size; ++i) {
         total+=arr[i].bt;
-        cout<<setfill('#')<<setw(arr[i].bt*2)<<total;
+        cout<<setfill('-')<<setw(arr[i].bt*2)<<total;
     }
 }
 void AverageTime(Process arr[],int size){
